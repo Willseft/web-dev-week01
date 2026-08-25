@@ -27,7 +27,12 @@ const openCourseLines = (courses => {
   return openCourses(courses).map((course) => courseLine(course));
 })
 // 6 
-
+const findCourse = (courses, code) => {
+  return courses.find((course) => course.code === code);
+}
 // 7
+const addCourse = (courses, newCourse) => {
+  return [...courses, newCourse];
+}
 
 // 8
