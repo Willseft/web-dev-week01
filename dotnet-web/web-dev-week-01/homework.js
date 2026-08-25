@@ -15,7 +15,9 @@ const isFull = (course) => {
   return course.enrolled === course.cap;
 }
 // 3
-
+const openCourses = (course) => {
+  return course.filter((course) => !isFull(course));
+}
 // 4
 
 // 5 
