@@ -19,7 +19,9 @@ const openCourses = (course) => {
   return course.filter((course) => !isFull(course));
 }
 // 4
-
+const courseTitles = (courses) => {
+  return courses.map((course) => course.title);
+}
 // 5 
 
 // 6 
