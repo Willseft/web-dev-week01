@@ -23,7 +23,9 @@ const courseTitles = (courses) => {
   return courses.map((course) => course.title);
 }
 // 5 
-
+const openCourseLines = (courses => {
+  return openCourses(courses).map((course) => courseLine(course));
+})
 // 6 
 
 // 7
