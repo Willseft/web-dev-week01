@@ -14,10 +14,16 @@
   <nav class="navbar navbar-expand-md">
     <div class="container">
       <a class="navbar-brand" href="index.html">The Cryptid Registry</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#reportNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="reportNavbar"></div>
       <div class="navbar-nav">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="registry.html">Registry</a>
         <a class="nav-link active" href="report.html">Report a Sighting</a>
+      </div>
       </div>
     </div>
   </nav>
@@ -47,8 +53,8 @@
           </div>
 
           <div class="mb-3">
-            <label for="cryptid">Which one did you see?</label>
-            <select id="cryptid">
+            <label class="form-label" for="cryptid">Which one did you see?</label>
+            <select class="form-select" id="cryptid">
               <option>Choose…</option>
               <option>The Hodag</option>
               <option>Bigfoot</option>
