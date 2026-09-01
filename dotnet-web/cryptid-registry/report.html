@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Cryptid Registry — Report a Sighting</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/brite/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
   <!-- TODO: navbar (same as index.html, with Report marked active) -->
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md bg-success">
     <div class="container">
       <a class="navbar-brand" href="index.html">The Cryptid Registry</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#reportNavbar">
@@ -24,7 +26,7 @@
         <a class="nav-link" href="registry.html">Registry</a>
         <a class="nav-link active" href="report.html">Report a Sighting</a>
       </div>
-      </div>
+    </div>
     </div>
   </nav>
 
@@ -71,7 +73,7 @@
             <textarea class="form-control" id="account" rows="4"></textarea>
           </div>
 
-          <button class="btn btn-primary" type="submit">File report</button>
+          <button class="btn btn-warning" type="submit">File report</button>
         </form>
       </div>
     </div>
@@ -80,7 +82,7 @@
   </main>
 
   <!-- TODO: footer -->
-  <footer class="text-center text-muted py-4">
+  <footer class="text-center text-muted bg-success py-4">
     <p>© 2026 The Cryptid Registry</p>
   </footer>
 
