@@ -1,4 +1,4 @@
-@model List<Cryptids.Web.Models.Cryptid>
+@model List<Cryptid>
 
 <h1>Cryptids Registry</h1>
 
@@ -8,6 +8,7 @@
             <th>Name</th>
             <th>Region</th>
             <th>Sightings</th>
+            <th>Details</th>
         </tr>
     </thead>
 
@@ -18,6 +19,9 @@
                 <td>@cryptid.Name</td>
                 <td>@cryptid.Region</td>
                 <td>@cryptid.Sightings</td>
+                <td>
+                    <a href="/Cryptids/Details/@cryptid.Id">View Details</a>
+                </td>
             </tr>
         }
     </tbody>
