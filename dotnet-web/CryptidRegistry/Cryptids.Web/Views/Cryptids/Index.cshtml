@@ -1,0 +1,24 @@
+@model List<Cryptids.Web.Models.Cryptid>
+
+<h1>Cryptids Registry</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Region</th>
+            <th>Sightings</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var cryptid in Model)
+        {
+            <tr>
+                <td>@cryptid.Name</td>
+                <td>@cryptid.Region</td>
+                <td>@cryptid.Sightings</td>
+            </tr>
+        }
+    </tbody>
+</table>
